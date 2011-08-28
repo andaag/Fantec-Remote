@@ -1,3 +1,20 @@
+/**
+ *     Copyright (C) 2011 Anders Aagaard <aagaande@gmail.com>
+ *
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 package com.neuron.fantecremote;
 
 import java.io.IOException;
@@ -63,7 +80,7 @@ public class FantecActivity extends Activity {
         /*AdView adView = (AdView)this.findViewById(R.id.adView);
         adView.loadAd(new AdRequest());*/
         // Create the adView
-        AdView adView = new AdView(this, AdSize.BANNER, ADVIEW_KEY);
+        AdView adView = new AdView(this, AdSize.BANNER, "a14dd8d8827bacc");
         // Lookup your LinearLayout assuming it’s been given
         // the attribute android:id="@+id/mainLayout"
         LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayout);
