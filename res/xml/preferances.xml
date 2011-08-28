@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Main">
+		<CheckBoxPreference android:title="Pause playback on phonecall"
+			android:key="autopause" android:summary="Automatically pause the movie (if the app is active) on phone call" 
+			android:defaultValue="true"/>
+
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="Server">
+		<EditTextPreference android:title="Hostname or ip"
+			android:key="server" android:summary="Server hostname or ip" android:dialogTitle="Server hostname or ip"
+			/>
+		<EditTextPreference android:title="Port"
+			android:key="port" android:summary="Server port (default 1024)" android:dialogTitle="Server port (default 1024)"
+			/>
+	</PreferenceCategory>
+</PreferenceScreen>

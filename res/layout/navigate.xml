@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLayout" android:orientation="vertical">
+    <!--     xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" -->
+    
+	<com.markupartist.android.widget.ActionBar
+		android:id="@+id/actionbar"
+		style="@style/ActionBar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+		
+	<View android:layout_height="2px" android:layout_width="fill_parent" android:background="#555" android:layout_marginBottom="5dip"/>
+	
+	<TextView android:layout_margin="20dip" android:id="@+id/infotext" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:visibility="gone" android:text="You have no servers configured. Click the configuration button in the upper right corner to configure one!\n\nYou will need:\n* A MM-FHDL with remote control enabled in settings.\n * The network address for your device."/>
+    
+    <TableLayout android:layout_height="wrap_content" android:id="@+id/tableLayout" android:layout_width="fill_parent" android:layout_weight="1">
+        <TableRow android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent">
+            <ImageButton android:src="@drawable/ic_menu_home" android:id="@+id/imageButton1" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+            <ImageButton android:src="@drawable/ic_menu_play_clip_up" android:id="@+id/imageButton2" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+            <ImageButton android:src="@drawable/ic_menu_back" android:id="@+id/imageButton3" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+        </TableRow>
+
+	    <TableRow android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent">
+	        <ImageButton android:src="@drawable/ic_menu_play_clip_left" android:id="@+id/imageButton4" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/sym_keyboard_return" android:id="@+id/imageButton5" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/ic_menu_play_clip" android:id="@+id/imageButton6" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	    </TableRow>
+	    <TableRow android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent">
+	        <ImageButton android:src="@drawable/ic_menu_edit" android:id="@+id/imageButton7" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/ic_menu_play_clip_down" android:id="@+id/imageButton8" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/ic_menu_manage" android:id="@+id/imageButton9" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	    </TableRow>
+	    
+	
+		<!-- <TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1">
+			<View android:layout_span="3" android:background="#fff" android:layout_height="2dip" layout_width="fill_parent" layout_height="wrap_content" />
+	    </TableRow>  -->  
+	    
+	    <TableRow android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent">
+	        <ImageButton android:src="@drawable/ic_media_stop" android:id="@+id/imageButton10" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/playpause" android:id="@+id/imageButton11" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/ic_menu_info_details" android:id="@+id/imageButton12" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	    </TableRow>
+	    
+	    <TableRow android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent">
+	        <ImageButton android:src="@drawable/ic_media_rew" android:id="@+id/imageButton13" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/ic_media_ff" android:id="@+id/imageButton14" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/ic_menu_start_conversation" android:id="@+id/imageButton15" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>'
+	    </TableRow>
+	    
+	    <TableRow android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent">
+	        <ImageButton android:src="@drawable/ic_media_previous" android:id="@+id/imageButton16" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/ic_media_next" android:id="@+id/imageButton17" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>
+	        <ImageButton android:src="@drawable/ic_lock_ringer_off" android:id="@+id/imageButton18" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"></ImageButton>'
+	    </TableRow>
+	    
+	    <!--   <TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1">
+			<com.google.ads.AdView android:id="@+id/adView"
+	                         android:layout_width="wrap_content"
+	                         android:layout_height="wrap_content"
+	                         ads:adUnitId="a14dd8d8827bacc"
+	                         ads:adSize="BANNER"
+	                         ads:loadAdOnCreate="true"/>
+	    </TableRow> --> 
+    
+    </TableLayout>
+    <View android:layout_height="2px" android:layout_width="fill_parent" android:background="#555"/>
+</LinearLayout>
